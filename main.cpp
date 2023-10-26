@@ -4,8 +4,8 @@
 #include "Snake.h"
 #include "Food.h"
 
-#define WIDTH 60
-#define HEIGHT 30
+#define WIDTH 50
+#define HEIGHT 25
 using namespace std;
 
 Snake snake({WIDTH/2, HEIGHT/2}, 1);
@@ -19,7 +19,7 @@ void board(){
 
     vector<COORD> snake_body = snake.get_body();
 
-    cout << "SCORE: " << score << endl;
+    cout << " SCORE: " << score << "\n\n";
     for (int i = 0; i < HEIGHT; i++){
         cout << "\t\t#";
         for (int j = 0; j < WIDTH - 2; j++){

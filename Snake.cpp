@@ -24,6 +24,19 @@ void Snake::move_snake(){
         case 'l': pos.X -= vel; break;
         case 'r': pos.X += vel; break;
     }
+    if (pos.X > WIDTH - 2)
+        pos.X = 1;
+    if (pos.X < 1)
+        pos.X = WIDTH - 2;
+    
+    
+    
+    
+    if (pos.Y > HEIGHT - 2)
+        pos.Y = 1;
+    if (pos.Y < 1)
+        pos.Y = HEIGHT - 2;
+
 
     body.push_back(pos);
     if (body.size() > len)
