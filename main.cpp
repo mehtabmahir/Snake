@@ -1,11 +1,10 @@
 #include <iostream>
 #include <conio.h>
-#include <ctime>
 #include "Snake.h"
 #include "Food.h"
 
-#define WIDTH 50
-#define HEIGHT 25
+#define WIDTH 80
+#define HEIGHT 40
 using namespace std;
 
 Snake snake({WIDTH/2, HEIGHT/2}, 1);

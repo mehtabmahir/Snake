@@ -2,8 +2,9 @@
 #define FOOD_H
 #include <windows.h>
 #include <cstdlib>
-#define WIDTH 50
-#define HEIGHT 25
+#include <ctime>
+#define WIDTH 80
+#define HEIGHT 40
 
 class Food{
 	private:
